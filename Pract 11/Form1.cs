@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Pract_11
 {
@@ -36,6 +37,18 @@ namespace Pract_11
 
         private void получитьОтветToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Regex regex1 = new Regex("a[hce]b"); // переделать
+            Regex regex2 = new Regex("a[0-9]+a"); // переделать 
+            MatchCollection matches1 = regex1.Matches(textBox1.Text);
+            MatchCollection matches2 = regex2.Matches(textBox2.Text);
+            for (int i = 0; i < matches1.Count; i++)
+            {
+                textBox3.Text += matches1[i].Value + " ";
+            }
+            for (int j = 0; j < matches2.Count; j++)
+            {
+                textBox4.Text += matches2[j].Value + " ";
+            }
 
         }
     }
