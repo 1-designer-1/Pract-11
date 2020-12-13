@@ -37,7 +37,7 @@ namespace Pract_11
 
         private void получитьОтветToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Regex regex1 = new Regex("a[hce]b"); // переделать
+            Regex regex1 = new Regex("23"); // переделать
             Regex regex2 = new Regex("a[0-9]+a"); // переделать 
             MatchCollection matches1 = regex1.Matches(textBox1.Text);
             MatchCollection matches2 = regex2.Matches(textBox2.Text);
