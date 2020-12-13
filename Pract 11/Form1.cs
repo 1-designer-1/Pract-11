@@ -33,5 +33,10 @@ namespace Pract_11
                               "Дана строка '*+ *q+ *qq+ *qqq+ *qqq qqq+'. Напишите регулярное выражение, которое найдет строки *q+, *qq+, *qqq+, не захватив остальные. ", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
         }
+
+        private void получитьОтветToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

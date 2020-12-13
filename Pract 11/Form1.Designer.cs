@@ -61,7 +61,7 @@ namespace Pract_11
             this.оПрограммеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,13 +71,13 @@ namespace Pract_11
             this.получитьОтветToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
             // 
@@ -186,6 +186,7 @@ namespace Pract_11
             this.GetAnswer.TabIndex = 8;
             this.GetAnswer.Text = "Получить ответ";
             this.GetAnswer.UseVisualStyleBackColor = true;
+            this.GetAnswer.Click += new System.EventHandler(this.получитьОтветToolStripMenuItem_Click);
             // 
             // textBox3
             // 
@@ -208,6 +209,7 @@ namespace Pract_11
             this.получитьОтветToolStripMenuItem.Name = "получитьОтветToolStripMenuItem";
             this.получитьОтветToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.получитьОтветToolStripMenuItem.Text = "Получить ответ";
+            this.получитьОтветToolStripMenuItem.Click += new System.EventHandler(this.получитьОтветToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
