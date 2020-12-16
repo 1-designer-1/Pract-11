@@ -37,8 +37,8 @@ namespace Pract_11
 
         private void получитьОтветToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Regex regex1 = new Regex("23"); // переделать
-            Regex regex2 = new Regex("a[0-9]+a"); // переделать 
+            Regex regex1 = new Regex("2[+]*3"); 
+            Regex regex2 = new Regex(""); 
             MatchCollection matches1 = regex1.Matches(textBox1.Text);
             MatchCollection matches2 = regex2.Matches(textBox2.Text);
             for (int i = 0; i < matches1.Count; i++)
