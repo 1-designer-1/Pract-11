@@ -31,14 +31,14 @@ namespace Pract_11
                               "Задание 1 \n" +
                               "Дана строка '23 2+3 2++3 2+++3 445 677'. Напишите регулярное выражение, которое найдет строки 23, 2+3, 2++3, 2+++3, не захватив остальные. \n" +
                               "Задание 2 \n" +
-                              "Дана строка '*+ *q+ *qq+ *qqq+ *qqq qqq+'. Напишите регулярное выражение, которое найдет строки *q+, *qq+, *qqq+, не захватив остальные. ", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                              "Дана строка '*+ *q+ *qq+ *qqq+ *qqq qqq+'. Напишите регулярное выражение, которое найдет строки *+, *q+, *qq+, *qqq+, не захватив остальные. ", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
         }
 
         private void получитьОтветToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Regex regex1 = new Regex("2[+]*3"); 
-            Regex regex2 = new Regex(""); 
+            Regex regex2 = new Regex("[*][q]*[+]"); 
             MatchCollection matches1 = regex1.Matches(textBox1.Text);
             MatchCollection matches2 = regex2.Matches(textBox2.Text);
             for (int i = 0; i < matches1.Count; i++)
@@ -49,6 +49,13 @@ namespace Pract_11
             {
                 textBox4.Text += matches2[j].Value + " ";
             }
+
+        }
+
+        private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox3.Clear();
+            textBox4.Clear();
 
         }
     }
